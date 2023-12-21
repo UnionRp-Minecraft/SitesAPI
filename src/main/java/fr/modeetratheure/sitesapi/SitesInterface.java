@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface SitesInterface {
 
-    Directory getPath(String url);
-    List<Directory> getAllPaths();
-    Site getSite(String url);
+    Site getSites();
+
+    Site getSite(String site);
 
 }
