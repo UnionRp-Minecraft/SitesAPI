@@ -20,6 +20,8 @@ plugins {
 }
 apply plugin: 'net.minecraftforge.gradle'
 
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
 minecraft{
     mappings channel: 'stable', version: '39-1.12'
 }

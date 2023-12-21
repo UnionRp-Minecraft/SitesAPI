@@ -1,13 +1,9 @@
 package fr.modeetratheure.sitesapi.filesystem;
 
-import fr.aym.acsguis.component.layout.GuiScaler;
-import fr.aym.acsguis.component.panel.GuiFrame;
-import fr.modeetratheure.sitesapi.filesystem.Directory;
+public interface Site extends Directory{
 
-public abstract class Site extends GuiFrame implements Directory {
+    public Controller getController();
 
-    public Site(int width, int height, GuiScaler scale) {
-        super(width, height, scale);
-    }
+    public Directory getDirectory(String dir);
 
 }
